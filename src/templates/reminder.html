@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>set reminder</title>
+    <link rel="stylesheet" href="/src/styles/reminder.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -15,10 +16,41 @@
         crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="form">
-    <form action="">
+    <form>
+        <table border="5px" width="20%" height="500px" align="center" bgcolor="black">
+        <tr align="center" bgcolor="yellow ">
+        <th colspan="2"><font size="10">Set your reminder</font></th>
+        </tr>
+        <tr>
+        <th><font color="yellow"> <label>Name of medicine</label></th>
+        <th><input type="text"></th>
+        </tr>
+        <tr >
+        <th><font color="yellow"><label>Mobile No.</label></th>
+        <th><input type="number"></th>
+        </tr>
+   
+      
+        <tr >
+        <th><font color="yellow">
+        <label>Dosage per day</label></th>
+        <th><select name="dosageperday">
+        <option value="one">1</option>
+        <option value="two">2</option>
+        <option value="three">3</option>
+        <option value="four">4</option>
+        <option value="five">5</option>
+        </th>
+        </tr>
         
-    </form>
-    </div>
+        <tr align="center" bgcolor="yellow">
+        <th colspan="2"><input type="Submit">
+        <input type="reset">
+        </th>
+        </tr>
+        
+        </table>
+        </form>
+       
 </body>
 </html>
