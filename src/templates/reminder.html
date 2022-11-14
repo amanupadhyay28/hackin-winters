@@ -36,6 +36,7 @@
         border: 1px black solid;
         height: 50px;
       }
+      
     </style>
   </head>
 
@@ -59,8 +60,9 @@
         <input type="number" id="dfm" name="duration" placeholder="No of days " />
 
         <label for="dosage">Enter Time slots</label>
+        <input type="time" id="dosage" name="time"/>
 
-        <div class="">
+        <!-- <div class="">
           <div class="col-lg-12">
             <div id="row">
               <div class="input-group m-3">
@@ -70,7 +72,7 @@
                     Delete
                   </button>
                 </div>
-                <input type="time" id="dosage" class="form-control m-input" placeholder="time slots" />
+                <input type="time" id="dosage" name="time" class="form-control m-input"/>
               </div>
             </div>
 
@@ -79,7 +81,7 @@
               <span class="bi bi-plus-square-dotted"> </span> ADD
             </button>
           </div>
-        </div>
+        </div> -->
 
         <input type="submit" value="Submit" />
       </form>
@@ -91,7 +93,7 @@
           '<div class="input-group-prepend">' +
           '<button class="btn btn-danger" id="DeleteRow" type="button">' +
           '<i class="bi bi-trash"></i> Delete</button> </div>' +
-          '<input type="time" class="form-control m-input"> </div> </div>';
+          '<input type="time" name ="time" class="form-control m-input"> </div> </div>';
 
         $("#newinput").append(newRowAdd);
       });
