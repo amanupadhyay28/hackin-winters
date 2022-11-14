@@ -5,6 +5,7 @@ from fastapi import FastAPI, Request
 from tortoise.contrib.fastapi import register_tortoise
 import constants
 from fastapi.templating import Jinja2Templates
+from fastapi.staticfiles import StaticFiles
 
 from .routes.search import router as search_router
 from .routes.reminder import router as reminder_router
@@ -12,7 +13,7 @@ from .routes.reminder import router as reminder_router
 app = FastAPI()
 app.include_router(search_router)
 app.include_router(reminder_router)
-
+app.mount("/static", StaticFiles(directory="src/static"), name="static")
 
 template = Jinja2Templates(directory="src/templates")
 
