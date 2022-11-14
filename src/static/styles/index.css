@@ -1,16 +1,32 @@
 .style {
     opacity: 0.9;
 }
+.style2 {
+    opacity: 0.8;
+}
+
+img {
+    height: 500px;
+}
 
 .con {
     height: 500px;
+    width: 50%;
     z-index: -1;
 }
 
-.navback a{
+.cardgroup {
+    margin: 10px auto;
+    padding: 10px auto;
+    width: 60%;
+    text-align: center;
+}
+
+.navback a {
     border-radius: 20px;
 }
-.navback a:hover{
+
+.navback a:hover {
     background-color: white;
     color: black;
 }
@@ -20,8 +36,4 @@
     position: relative;
     right: -1020px;
     border-radius: 11px;
-}
-
-.c{
-    height: 10px;
 }
