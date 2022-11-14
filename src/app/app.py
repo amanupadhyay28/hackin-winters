@@ -6,7 +6,12 @@ from tortoise.contrib.fastapi import register_tortoise
 import constants
 from fastapi.templating import Jinja2Templates
 
+from .routes.search import router as search_router
+
+
 app = FastAPI()
+app.include_router(search_router)
+
 template = Jinja2Templates(directory="src/templates")
 
 
