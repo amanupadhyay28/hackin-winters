@@ -28,11 +28,11 @@
       height: 50px;
     }
 
-    .btn{
+    .btn {
       margin-left: -30px;
     }
 
-    .form-control{
+    .form-control {
       border: 1px black solid;
       height: 50px;
     }
@@ -41,14 +41,14 @@
 
 <body>
   <div class="container">
-    <form action="">
+    <form action="/reminder/create" method="post">
 
       <label for="mname">Medicine Name</label>
       <input type="text" id="mname" name="medname" placeholder="Name of medicine">
 
       <label for="mobileno">Mobile no</label>
       <input type="number" id="mobileno" name="mobno" placeholder="Your mobile no">
-      
+
       <label for="Dosage">Dosage</label>
       <input class="dsg" type="number" id="Dosage" name="Dosage" placeholder="Enter dosage">
       <select name="dosetype" id="">
@@ -59,7 +59,7 @@
       <label for="dfm">Duration for medicine</label>
       <input type="number" id="dfm" name="duration" placeholder="No of days ">
 
-      <label for="dosage">Dosage per day</label>
+      <label for="dosage">Enter Time slots</label>
 
       <div class="">
         <div class="col-lg-12">
@@ -71,7 +71,7 @@
                   Delete
                 </button>
               </div>
-              <input type="text" class="form-control m-input">
+              <input type="time" id="dosage" class="form-control m-input" placeholder="time slots">
             </div>
           </div>
 
@@ -95,7 +95,7 @@
         '<div class="input-group-prepend">' +
         '<button class="btn btn-danger" id="DeleteRow" type="button">' +
         '<i class="bi bi-trash"></i> Delete</button> </div>' +
-        '<input type="text" class="form-control m-input"> </div> </div>';
+        '<input type="time" class="form-control m-input"> </div> </div>';
 
       $('#newinput').append(newRowAdd);
     });
@@ -108,4 +108,3 @@
 </body>
 
 </html>
-
