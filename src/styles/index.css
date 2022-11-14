@@ -1,63 +1,23 @@
-/* * {
-    margin: 0px;
-    padding: 0px;
-}
-
-#head {
-    background-color: brown;
-    font-family: 'Baloo 2', cursive;
-    font-size: 2.5rem;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px black solid;
-    opacity: 0.7;
-    margin-top: 10px;
-}
-
-#logo {
-    height: 50px;
-    width: 50px;
-    margin-left: 0px;
-}
-
-.container-fluid {
-    color: white;
-}
-
-.box {
-    display: flex;
-    margin-top: 10px;
-    height: 200px;
-
-}
-
-.card {
-    border: 4px black solid;
-    margin: 20px 10px;
-    padding: 20px 10px;
-    width: 50%;
-    /* height: 200px; 
-} */
-
-.style{
+.style {
     opacity: 0.9;
 }
 
-/* img .size{
-    height: 1px;
-    width: 1px;
-} */
-
-.con{
+.con {
     height: 500px;
+    z-index: -1;
 }
 
-.card{
-    
+.navback a{
+    border-radius: 20px;
 }
-/* .col-sm-6{
-    height: 100px;
-    width: 100px;
-} */
+.navback a:hover{
+    background-color: white;
+    color: black;
+}
+
+#logoh {
+    height: 50px;
+    position: relative;
+    right: -1020px;
+    border-radius: 11px;
+}
