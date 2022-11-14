@@ -7,10 +7,12 @@ import constants
 from fastapi.templating import Jinja2Templates
 
 from .routes.search import router as search_router
-
+from .routes.reminder import router as reminder_router
 
 app = FastAPI()
 app.include_router(search_router)
+app.include_router(reminder_router)
+
 
 template = Jinja2Templates(directory="src/templates")
 

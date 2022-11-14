@@ -11,4 +11,4 @@ async def search_page(request: Request, name: str = None):
     if not name:
         return "without name"
 
-    return "With name"
+    return template.TemplateResponse("")
