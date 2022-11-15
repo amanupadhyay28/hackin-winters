@@ -1,6 +1,7 @@
 body {
     background: url('/src/static/asset/hourglass-4666692.jpg') no-repeat center center/cover;
     background-attachment: fixed;
+    font-family: 'Baloo 2', cursive;
 }
 
 .style {
@@ -24,9 +25,11 @@ img {
 }
 
 #cg {
+    margin: 50px;
     margin-left: 10%;
-
+    opacity: 0.8;
 }
+
 .cardgroup {
     margin-top: 10px;
     padding: 10px;
@@ -35,13 +38,43 @@ img {
     display: inline;
 }
 
+.c1 {
+    margin: 50px;
+}
+
+.c2 {}
+
+.c3 {
+    background-color: #212529;
+    opacity: 0.95;
+    border-radius: 30px;
+    font-family: 'Syne Mono', monospace;
+}
+
+.sizel {
+    font-weight: bold;
+}
+
+.navback {
+    margin: auto 15px;
+}
+
 .navback a {
     border-radius: 20px;
+    font-family: 'Baloo 2', cursive;
 }
 
 .navback a:hover {
     background-color: white;
     color: black;
+}
+
+h1 {
+    font-family: 'Syne Mono', monospace;
+    /* font-weight: bolder; */
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
 }
 
 #logoh {
@@ -54,4 +87,28 @@ img {
 footer {
     position: relative;
     bottom: -275px;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #0087ca;
+}
+
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
