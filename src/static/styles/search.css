@@ -7,10 +7,12 @@
         background-color:#adb5bd;
         font-family: "Poppins", sans-serif;
         font-weight: 300;
+        background: url('/hackin-winters/src/static/asset/hourglass-4666692.jpg') no-repeat center center/cover ;
+ background-attachment: fixed;
        }
 
        .height{
-        height: 100vh;
+        height: 80vh;
        }
        
 
@@ -19,14 +21,14 @@
        
          
        }
-
        .search input{
 
         height: 60px;
         text-indent: 25px;
         border: 2px solid #d6d4d4;
-
-
+        box-shadow: 8px 6px 5px black;
+        opacity: 0.6; 
+       
        }
        .search input:focus{
 
@@ -47,29 +49,28 @@
        .search button{
 
         position: absolute;
+        background: rgb(172, 168, 168);
         top: 5px;
         right: 5px;
         height: 50px;
-        width: 110px;
-        background: #4e5358;
-
+        width: 150px;
+        border: 2px solid rgba(56, 54, 54, 0.432);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        
+       
        }
        .search button:hover{
-        color: white;
-        background-color: black;
+        color: black;
+        background-color: rgb(129, 125, 125);
+        border: 2px solid black;
        }
 
 
 
 
-        .ret{
-        margin: 25px 0;
+       .ret{
+        margin-right: 0px;
         display: inline-flex;
-        
-      }
-      .ret{
-        display: inline-block;
-        margin: 30px;
         text-decoration: none;
         border: 2px solid black;
         color:black;
@@ -79,12 +80,11 @@
         text-transform: uppercase;
         transition: all 0.3s ease;
         align-items: center;
-        
-
-       
-        position: relative; 
-        left: 18em;  
-      }
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        box-shadow: 4px 4px 13px  black;
+       }
 
       .ret:hover{
         background: black;
