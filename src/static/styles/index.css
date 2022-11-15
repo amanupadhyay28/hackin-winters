@@ -1,6 +1,6 @@
 body {
-    /* background: url('/src/static/asset/hourglass-4666692.jpg') no-repeat center center/cover; */
-    background: url('/hackin-winters/src/static/asset/hourglass-4666692.jpg') no-repeat center/cover;
+    background: url('/src/static/asset/hourglass-4666692.jpg') no-repeat center center/cover;
+    /* background: url('/hackin-winters/src/static/asset/hourglass-4666692.jpg') no-repeat center/cover; */
     background-attachment: fixed;
     font-family: 'Baloo 2', cursive;
 }
@@ -93,7 +93,7 @@ footer {
 .hover-underline-animation {
     display: inline-block;
     position: relative;
-    color: #0087ca;
+    color: white;
 }
 
 .hover-underline-animation:after {
@@ -104,7 +104,7 @@ footer {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #0087ca;
+    background-color: white;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
