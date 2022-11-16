@@ -41,9 +41,12 @@ img {
 
 .c1 {
     margin: 50px;
+    transition: transform 0.4s;
 }
 
-.c2 {}
+.c1:hover {
+    transform: scale(1.1);
+  }
 
 .c3 {
     background-color: #212529;
