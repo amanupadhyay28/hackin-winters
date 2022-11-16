@@ -87,6 +87,7 @@ position: relative;
 }
 
  .ret:hover{
-  /* background: black;  */
-  color: black; 
+  background: black; 
+  color: white; 
+  text-decoration: underline;
 } 
