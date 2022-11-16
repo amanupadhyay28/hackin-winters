@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>set reminder</title>
-    <!-- <link rel="stylesheet" href="{{ url_for('static', path = '/styles/reminder.css')}}" /> -->
-    <link rel="stylesheet" href="/hackin-winters/src/static/styles/reminder.css">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet" />
 
 <head>
   <meta charset="UTF-8" />
@@ -15,61 +7,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>set reminder</title>
   <!-- <link rel="stylesheet" href="{{ url_for('static', path = '/styles/reminder.css')}}" /> -->
-  <link rel="stylesheet" href="/hackin winter/hackin-winters/src/static/styles/reminder.css">
+  <link rel="stylesheet" href="/hackin-winters/src/static/styles/reminder.css">
+  <link rel="stylesheet" href="/src/static/styles/reminder.css">
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet" />
 
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>set reminder</title>
+    <!-- <link rel="stylesheet" href="{{ url_for('static', path = '/styles/reminder.css')}}" /> -->
+    <link rel="stylesheet" href="/hackin winter/hackin-winters/src/static/styles/reminder.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@700&display=swap" rel="stylesheet" />
 
-  <style>
-    body {
-      display: flex;
-      flex-direction: column;
-      margin-top: 1%;
-      justify-content: center;
-      align-items: center;
-    }
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    #rowAdder {
-      margin-left: -15px;
-      width: 95px;
-      height: 50px;
-    }
-
-    .btn {
-      margin-left: -30px;
-    }
-
-    .form-control {
-      border: 1px black solid;
-      height: 50px;
-    }
-  </style>
-  <script type='text/javascript'>
-    function addFields() {
-      // Generate a dynamic number of inputs
-      var number = document.getElementById("member").value;
-      // Get the element where the inputs will be added to
-      var container = document.getElementById("container");
-      // Remove every children it had before
-      while (container.hasChildNodes()) {
-        container.removeChild(container.lastChild);
+    <style>
+      body {
+        display: flex;
+        flex-direction: column;
+        margin-top: 1%;
+        justify-content: center;
+        align-items: center;
       }
-      for (i = 0; i < number; i++) {
-        // Append a node with a random text
-        container.appendChild(document.createTextNode("Member " + (i + 1)));
-        // Create an <input> element, set its type and name attributes
-        var input = document.createElement("input");
-        input.type = "time";
-        input.name = "member" + i;
-        container.appendChild(input);
-        // Append a line break 
-        container.appendChild(document.createElement("br"));
+
+      #rowAdder {
+        margin-left: -15px;
+        width: 95px;
+        height: 50px;
       }
-    }
-  </script>
-</head>
+
+      .btn {
+        margin-left: -30px;
+      }
+
+      .form-control {
+        border: 1px black solid;
+        height: 50px;
+      }
+    </style>
+    <script type='text/javascript'>
+      function addFields() {
+        // Generate a dynamic number of inputs
+        var number = document.getElementById("member").value;
+        // Get the element where the inputs will be added to
+        var container = document.getElementById("container");
+        // Remove every children it had before
+        while (container.hasChildNodes()) {
+          container.removeChild(container.lastChild);
+        }
+        for (i = 0; i < number; i++) {
+          // Append a node with a random text
+          container.appendChild(document.createTextNode("Member " + (i + 1)));
+          // Create an <input> element, set its type and name attributes
+          var input = document.createElement("input");
+          input.type = "time";
+          input.name = "member" + i;
+          container.appendChild(input);
+          // Append a line break 
+          container.appendChild(document.createElement("br"));
+        }
+      }
+    </script>
+  </head>
 
 <body>
   <div class="container">
@@ -97,6 +99,9 @@
       <div id="container"></div>
       <input type="submit" value="Submit" />
     </form>
+  </div>
+  <div>
+    <a class="ret" href="/src/templates/index.html">return home</a>
   </div>
 
 </body>
